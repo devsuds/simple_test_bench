@@ -1,0 +1,20 @@
+
+<div ng-app="myApp" ng-controller="productCtrl">
+	<form>
+		<label for="prods">Product Name</label>
+		<input type="text" name="prods" ng-model="newProducts">
+		<button ng-click="">Add</button>
+	</form>
+	<p>Newly Added products:</p>
+	<ul>
+		<li ng-repeat="product1 in newProducts">
+			{{product1.name}}
+		</li>
+	</ul>
+	<p>Old products:</p>		
+	<ul>
+		<li ng-repeat="product in products">
+			{{product.name}}
+		</li>
+	</ul>
+</div>
